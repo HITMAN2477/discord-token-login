@@ -1,6 +1,6 @@
 # 👾 Discord Token Login
 
-This is an Chrome extension _(works on most Chromium based browsers)_ that allows you to login to an Discord account with its token.
+This is a Chrome extension _(works on most Chromium-based browsers)_ that allows you to log in to a Discord account with its token.
 
 ## 👨‍💻 How to install
 
@@ -15,7 +15,7 @@ Select the folder you just extracted and click on the "Load" button. You should 
 ## 🤔 How to use
 
 1. Click on the extension icon
-2. Put your token in the input field then save it
+2. Put your token in the input field, then save it
 3. Open the Discord login page, then click on the "Token Login" button.
 
 ## 📸 Screenshots
