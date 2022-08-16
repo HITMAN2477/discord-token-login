@@ -36,6 +36,11 @@ a {
     color: inherit;
 }
 
+::selection {
+    background: var(--primary);
+    color: var(--header);
+}
+
 .hidden {
     display: none !important;
 }
