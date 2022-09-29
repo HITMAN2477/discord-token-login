@@ -28,6 +28,11 @@ Select the folder you just extracted and click on the "Load" button. You should 
 
 ![](https://github.com/umgustavo/discord-token-login/raw/main/screenshots/login_page.png)
 
+## 📝 TODO
+
+- [ ] Add token's user information at login page
+- [ ] Add multiple accounts system
+
 ## ⚠️ Disclaimer
 
 This project was made for educational purposes only.
