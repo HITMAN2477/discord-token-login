@@ -1,7 +1,7 @@
 {
     "name": "Discord Token Login",
     "description": "Login to a Discord account using its token.",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "manifest_version": 3,
     "icons": {
         "16": "icons/icon16.png",
