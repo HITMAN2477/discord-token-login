@@ -30,8 +30,8 @@ Select the folder you just extracted and click on the "Load" button. You should 
 
 ## 📝 TODO
 
-- [ ] Add token's user information at login page
-- [ ] Add multiple accounts system
+-   [x] Token's user information at login page
+-   [ ] Multiple accounts system
 
 ## ⚠️ Disclaimer
 
