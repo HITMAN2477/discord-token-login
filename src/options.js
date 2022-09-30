@@ -20,7 +20,12 @@ async function checkUpdates() {
     if (!version) return
 
     function formatVersion(ver) {
-        return parseInt(ver.replaceAll('.', '').replaceAll('v', ''))
+        const num = parseInt(ver.replaceAll('.', '').replaceAll('v', ''))
+        let v = num.toString()
+        while (v.length < 3) {
+            v += '0'
+        }
+        return parseInt(v)
     }
 
     try {
@@ -29,7 +34,9 @@ async function checkUpdates() {
         )
         const data = await res.json()
         const lastVersion = formatVersion(data.name)
+        const releaseUrl = data.html_url
         const downloadUrl = data.assets[0].browser_download_url
+
         let ver = formatVersion(version)
 
         console.log('Version checked successfully.')
@@ -38,7 +45,7 @@ async function checkUpdates() {
 
         if (ver < lastVersion) {
             setAlertHTML(
-                `New version available! <a href="${downloadUrl}" target="_blank">Click here</a> to download the <b>${data.name}</b>. (current: <b>v${version}</b>)`
+                `New version available! <b>${data.name}</b> <a href="${releaseUrl}" target="_blank">(repo)</a> <a href="${downloadUrl}" target="_blank">(download)</a>. (current: <b>v${version}</b>)`
             )
             showAlert()
         }
