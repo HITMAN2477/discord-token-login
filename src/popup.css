@@ -1,0 +1,83 @@
+:root {
+    --background: #36393f;
+    --header: #fff;
+    --color: #dcddde;
+    --primary: #5865f2;
+    --primary-darker: #4752c4;
+    --gray: #4f545c;
+    --gray-darker: #474c53;
+    --border-radius: 3px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Catamaran, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background: var(--background);
+    color: var(--color);
+    width: 230px;
+}
+
+a {
+    color: inherit;
+}
+
+::selection {
+    background: var(--primary);
+    color: var(--header);
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn {
+    transition: all 0.2s ease-out;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: var(--header);
+    border-radius: var(--border-radius);
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btn-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.btn-link .link-icon {
+    margin-left: 6px;
+    display: inline-flex;
+}
+
+.btn-primary {
+    background: var(--primary);
+}
+
+.btn-primary:not(:disabled):hover {
+    background: var(--primary-darker);
+}
+
+.btn-gray {
+    background: var(--gray);
+}
+
+.btn-gray:not(:disabled):hover {
+    background: var(--gray-darker);
+}
+
+.popup-container {
+    padding: 16px;
+}
